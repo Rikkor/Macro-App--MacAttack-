@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btn_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="Previous Track"
+        android:tint="@color/darkColorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_skip_previous_black_48dp" />
+
+    <ImageButton
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="Stop"
+        android:tint="@color/darkColorAccent"
+        app:layout_constraintStart_toEndOf="@+id/btn_prev"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_stop_black_48dp" />
+
+    <ImageButton
+        android:id="@+id/btn_pause"
+        android:layout_width="70dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="Play/Pause"
+        android:onClick="play"
+        android:tint="@color/darkColorAccent"
+        app:layout_constraintStart_toEndOf="@+id/btn_stop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_play_pause_black_48dp" />
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="Next Track"
+        android:onClick="skip"
+        android:tint="@color/darkColorAccent"
+        app:layout_constraintStart_toEndOf="@+id/btn_pause"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_skip_next_black_48dp" />
+
+    <ImageButton
+        android:id="@+id/btn_mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="Mute"
+        android:onClick="mute"
+        android:tint="@color/darkColorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_prev"
+        app:srcCompat="@drawable/ic_volume_off_black_48dp" />
+
+    <ImageButton
+        android:id="@+id/btn_volDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="Volume Down"
+        android:onClick="volDown"
+        android:tint="@color/darkColorAccent"
+        app:layout_constraintStart_toEndOf="@+id/btn_mute"
+        app:layout_constraintTop_toBottomOf="@+id/btn_stop"
+        app:srcCompat="@drawable/ic_volume_down_black_48dp" />
+
+    <ImageButton
+        android:id="@+id/btn_volUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="Volume Up"
+        android:onClick="volUp"
+        android:tint="@color/darkColorAccent"
+        app:layout_constraintStart_toEndOf="@+id/btn_volDown"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pause"
+        app:srcCompat="@drawable/ic_volume_up_black_48dp" />
+
+    <Switch
+        android:id="@+id/sw_media"
+        style="@style/AppTheme.Dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:checked="false"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat"
+        android:text="@string/str_mediakeys"
+        android:theme="@style/AppTheme.Dark"
+        app:layout_constraintEnd_toEndOf="@+id/btn_next"
+        app:layout_constraintTop_toBottomOf="@+id/btn_volDown"
+        tools:checked="false" />
+
+    <ImageButton
+        android:id="@+id/btn_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="FullScreen"
+        android:tint="@color/darkColorAccent"
+        app:layout_constraintStart_toEndOf="@+id/btn_volUp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_next"
+        app:srcCompat="@drawable/baseline_fullscreen_black_48dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,27 @@
+<!DOCTYPE resources [
+    <!ENTITY clientId "234fcb7a-294f-4bbd-8826-61b31c9d9497">
+    ]>
+
+<resources>
+    <string name="app_name">MacAttack</string>
+    <string name="btn_dropbox">Sign in to\n Dropbox</string>
+    <string name="btn_macro">Custom Macro</string>
+    <string name="btn_rule">Custom Rule</string>
+    <string name="btn_signIn">Sign in</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_instructions">Instructions</string>
+    <string name="btn_initialize">upload \n script</string>
+    <string name="APP_KEY">4zb5b3j7yzk5e3p</string>
+    <string name="title_activity_testactivity">testactivity</string>
+    <string name="str_url">URL</string>
+    <string name="str_urlInfo" translatable="false">Enter a URL. URL must start with either \'www\' or \'https\' Example \'www.google.com\' or \'https://google.com\'</string>
+    <string name="str_microsoft">Sign in to OneDrive</string>
+    <string name="str_logout">Logout</string>
+    <string name="str_mediakeys">Media Keys</string>
+    <string name="str_youtube">Youtube  hotkeys</string>
+    <string name="e">Youtube Hotkeys</string>
+    <string name="client_Id">&clientId;</string>
+    <string name="msalPrefix">msal&clientId;</string>
+    <string name="txt_signInDb">Sign in to Dropbox</string>
+    <string name="txt_signInOD">Sign in to Onedrive</string>
+</resources>

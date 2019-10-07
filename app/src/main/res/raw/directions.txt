@@ -1,0 +1,68 @@
+1) Install Autohotkey on your pc. Make sure dropbox or onedrive are installed and set up.
+
+2) Sign in to Dropbox or Onedrive on the MacAttack main screen
+
+3) Click the button below to upload the remoteaction.ahk script to your Dropbox
+ (located in /apps/MacroApp) Or to OneDrive (located in /_macattack)
+
+4) optionally adjust sleep timer at the top of remoteaction.ahk in a text editor; the value is specified in millseconds. By default the script checks every 400ms.
+
+5) Run remoteAction.ahk from your cloud storage drive(Optional - make a shortcut of it in the startup folder so that this script runs on computer startup, if you go this direction, dropbox or onedrive must also startup on boot)
+
+After a macro has been executed it will be moved to the remoteaction_ran folder with a timestamp
+
+
+=Available macros=
+shutdown
+ Turns off your computer
+
+reboot
+ Restarts your computer
+
+sleep
+ Puts your computer to sleep
+
+monitor off
+ Puts monitor(s) on target computer into low power state
+
+lock pc
+ Locks the pc, requiring a password to resume use
+
+run program
+ Prompts for a program to run. The macro will type the program name into the start menu search bar and press enter.
+
+media control
+ Various commands for controlling media playback on a computer. This is equivalent to pressing the multimedia keys on the keyboard. Your media playback software may need to be configured to use the multimedia keys as global hotkeys. fullscreen option sends alt+enter and may need to be configured for some players such as VLC. There is also an option to control youtube videos with the sane controls.
+
+open url
+ Opens the entered URL in the default web browser. useful for opening videos on pc. only recognizes properly formed urls ex:"https://google.com"
+
+ =voice commands=
+ execute any of the above actions by voice. the following phrases are recognized
+
+ shutdown
+
+ reboot
+
+ sleep
+
+ monitor, monitor off, turn off monitor
+
+ lock, lock pc
+
+ play, play music, pause, pause music, resume, resume music
+
+ stop, stop music
+
+ next track, skip track, next song, skip song, next, skip
+
+ previous track, previous song, previous
+
+ volume up, increase volume, turn it up, louder
+
+ volume down, lower volume, decrease volume, turn it down, quieter
+
+ mute, mute sound, turn it off, silence
+
+ fullscreen
+

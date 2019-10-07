@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jbloomfield.macroapp.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/btn_onedrive"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/colorAccent"
+        android:onClick="msLogin"
+        android:text="@string/str_microsoft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_macro"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/darkColorAccent"
+        android:onClick="customMacro"
+        android:text="@string/btn_macro"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_macro"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_dropbox"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/darkColorAccent"
+        android:onClick="dbLogin"
+        android:text="@string/btn_dropbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_onedrive" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/darkColorAccent"
+        android:onClick="logoutDialog"
+        android:text="@string/str_logout"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_rule"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_rule"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/darkColorAccent"
+        android:onClick="instructions"
+        android:text="@string/btn_instructions"
+        app:layout_constraintBottom_toTopOf="@+id/btn_macro"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/darkColorAccent"
+        android:contentDescription="voice Command"
+        android:tint="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/listView"
+        app:srcCompat="@drawable/baseline_record_voice_over_black_48dp" />
+</android.support.constraint.ConstraintLayout>

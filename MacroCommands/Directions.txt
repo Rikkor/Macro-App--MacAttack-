@@ -1,0 +1,6 @@
+1) Download dropbox application
+2) Put remoteAction.ahk in a separate folder within the local dropbox directory on your computer
+3) Run remoteAction.ahk (Optional - make a shortcut of it in the startup folder so that this script runs on computer startup)
+4) Make another directory labeled "remoteAction_ran" in the same directory
+5) Make any commands you'd like in an ahk file labeled "dummy.ahk" and place them in the same directory as remoteAction.ahk
+6) Set timer by changing the seconds in remoteAction.ahk
